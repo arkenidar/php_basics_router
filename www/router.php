@@ -10,11 +10,14 @@ function remove_string_from_beginning($to_remove, $from_this)
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
+/*
 $document_root = $_SERVER["DOCUMENT_ROOT"];
 $current_directory = realpath(".");
 $prefix = remove_string_from_beginning($document_root, $current_directory);
 if ($prefix === false) die("prefix error : '$document_root' , '$current_directory' ");
+*/
 
+$prefix = "/app/php_basics_router";
 $uri = remove_string_from_beginning($prefix, $uri);
 if ($uri === false) die("uri error : '$prefix' , '$uri' ");
 
