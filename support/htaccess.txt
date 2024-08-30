@@ -1,0 +1,5 @@
+
+https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod-rewrite-for-apache-on-debian-9
+
+sudo a2enmod rewrite
+sudo systemctl restart apache2 
